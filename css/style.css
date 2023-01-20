@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: rgb(57, 56, 56); */
+    perspective: 10000px;
+}
+/***************************/
+.container{
+    width: 80%;
+    margin:  60px auto;
+    position: relative;
+}
+/**********************/
+.div-1{
+    transform-style: preserve-3d;
+}
+.comp{
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    position: absolute;    
+    border-radius: 10px;
+    transform-origin: right 100px;
+    animation: asmaa 3s linear forwards;
+}
+@keyframes asmaa{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 1000px;
+    }
+}
+.c1{
+    transform: rotateZ(50deg); 
+}
+.c2{
+    transform: rotateZ(60deg);
+    opacity: .5;
+    animation: cc 3s linear forwards;
+}
+@keyframes cc{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 1000px;
+        transform: rotateZ(40deg);
+    }
+}
+.c3{
+    transform: rotateZ(70deg);
+    opacity: .3;
+    animation: cb 3s linear forwards;
+}
+@keyframes cb{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 1000px;
+        transform: rotateZ(30deg);
+    }
+}
+.c4{
+    transform: rotateZ(80deg);
+    opacity: .2;
+    animation: cv 3s linear forwards;
+
+}
+@keyframes cv{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 1000px;
+        transform: rotateZ(20deg);
+    }
+}
+
+/*********************************/
+.exa{
+    width: 120px;
+    height: 120px;
+    background-color: rgb(99, 159, 228);
+    position: absolute;
+    top: 150px ;
+    left: 1100px;
+    border-radius: 50%;
+    transform-origin: right 100px;
+    animation: circles 3s linear forwards;
+    animation-delay: 3s;
+}
+@keyframes circles{
+    0%{
+        left: 1100px;
+    }
+    100%{
+        left: 0;
+    }
+}
+.e2{
+    margin-left: -12px;
+    opacity: .7;
+    animation: circles-2 3s linear forwards;
+    animation-delay: 3s;
+
+}
+@keyframes circles-2{
+    0%{
+        left: 1100px;
+    }
+    100%{
+        left: 0;
+        margin-left: 10px;
+    }
+}
+.e3{
+    margin-left: -22px;
+    opacity: .5;
+    animation: circles-3 3s linear forwards;
+    animation-delay: 3s;
+
+}
+@keyframes circles-3{
+    0%{
+        left: 1100px;
+    }
+    100%{
+        left: 0;
+        margin-left: 18px;
+    }
+}
+.e4{
+    margin-left: -30px;
+    opacity: .3;
+    animation: circles-4 3s linear forwards;
+    animation-delay: 3s;
+
+}
+@keyframes circles-4{
+    0%{
+        left: 1100px;
+    }
+    100%{
+        left: 0;
+        margin-left: 26px;
+    }
+}
+
+/********************************************/
+.faw{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(183, 99, 228);
+    position: absolute;
+    top: 300px ;
+    left: 0;
+    border-radius: 10px;
+    animation: mah 3s linear forwards;
+    animation-delay: 6s;
+}
+@keyframes mah{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 1100px;
+    }
+}
+.f1{
+    animation: mah-1 3s linear forwards;
+    animation-delay: 6s;
+}
+@keyframes mah-1{
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: 1100px;
+        margin: 30px auto auto 30px;
+    }
+}
+.f2{
+    margin: 10px auto auto 10px;
+    opacity: .7;
+    animation: mah-2 3s linear forwards;
+    animation-delay: 6s;
+}
+@keyframes mah-2{
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: 1100px;
+        margin: 20px auto auto 20px;
+    }
+}
+.f3{
+    margin: 20px auto auto 20px;
+    opacity: .5;
+    animation: mah-3 3s linear forwards;
+    animation-delay: 6s;
+}
+@keyframes mah-3{
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: 1100px;
+        margin: 10px auto auto 10px;
+    }
+}
+.f4{
+    margin: 30px auto auto 30px;
+    opacity: .3;
+    animation: mah-4 3s linear forwards;
+    animation-delay: 6s;
+}
+@keyframes mah-4{
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: 1100px;
+        margin: 0px;
+    }
+}
+
+/*********************************/
+.square div{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 13px;
+    left: 13px;
+    background: #e15b64;
+    animation: ldio 1s infinite;
+    animation-delay: 0.1s;
+}
+@keyframes ldio{
+    0% { transform: scale(1.1) }
+    100% { transform: scale(1)}
+}
+.square .squ-2 {
+    top: 13px;
+    left: 75px;
+    background: #f47e60;
+    animation-delay: .2s;
+}
+.square .squ-3 {
+    top: 75px;
+    left: 13px;
+    background: #abbd81;
+    animation-delay: .3s;
+}
+.square .squ-4 {
+    top: 75px;
+    left: 75px;
+    background: #f6c391;
+    animation-delay: .5s;
+}
+.div-4 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 450px;
+    left: 1100px;
+    overflow: hidden;
+    animation: so 3s linear forwards ;
+    animation-delay: 9s;
+}
+@keyframes so{
+    0%{
+        left: 1100px;
+    }
+    100%{
+        left: 0;
+    }
+}
